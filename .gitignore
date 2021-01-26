@@ -3,6 +3,8 @@
 # dependencies
 /tutorial/node_modules
 /tutorial/.pnp
+/react-adavanced-2020/node_modules
+/react-adavanced-2020/.pnp
 .pnp.js
 
 # testing
