@@ -15,14 +15,14 @@ const ControlledInputs = () => {
     e.preventDefault();
     if (firstName && email) {
       const person = { id: new Date().getTime().toString(), firstName, email };
-      console.log(person);
+      alert('id: ' + person.id + ', nombre: ' + person.firstName + ', email: ' + person.email);
       setPeople((people) => {
         return [...people, person];
       });
       setFirstName('');
       setEmail('');
     } else {
-      console.log('empty values');
+      alert('empty values');
     }
   };
   return (
@@ -55,6 +55,7 @@ const ControlledInputs = () => {
           const { id, firstName, email } = person;
           return (
             <div className='item' key={id}>
+              <p>{id}</p>
               <h4>{firstName}</h4>
               <p>{email}</p>
             </div>
